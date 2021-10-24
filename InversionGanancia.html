@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function myFunction() {
+                var inver = parseFloat(document.getElementById("inversion").value);
+                var cotizinic = parseFloat(document.getElementById("cotizinic").value);
+                var cotizifinal = parseFloat(document.getElementById("cotizifinal").value);
+                alert((inver * cotizifinal)/cotizinic);
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <label>CONVERSION DE GANANCIAS CRYPTO</label>
+        </div>
+        <div>
+            <label for="inversion">INVERSION:</label>
+            <input type="text" id="inversion" name="inversion" required size="10">
+            <label for="cotizinic">COTIZACION INICIAL:</label>
+            <input type="text" id="cotizinic" name="cotizinic" required size="10">
+            <label for="cotizifinal">COTIZACION VENTA:</label>
+            <input type="text" id="cotizifinal" name="cotizifinal" required size="10">
+        </div>
+        <div>
+            <button type="button" onclick="myFunction()">Calcular</button>
+        </div>
+    </body>
+</html>
